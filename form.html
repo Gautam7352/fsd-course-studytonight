@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+
+    <form action=""><!--action is to send values to backend file-->
+
+        <!--using type attribute i can change the datatype of values to be accepted-->
+        <p>Name: <input type="text"></p>
+
+        <p>Email: <input type="email"></p>
+    
+        <p>Mobile: <input type="number"></p>
+        
+        <!--using p tag to keep in same line-->
+        <p>Gender: 
+            <!--using name tag i can ensure only one out of all is selected-->
+            <!--value attribute is value to be sent to server-->
+        <input type="radio" name="gender" value="male"><label for="male">male</label>
+        
+        <input type="radio" name="gender" value="female"><label for="female">female</label>
+        
+        <input type="radio" name="gender" value="other"><label for="other">other</label>
+        </p>
+       
+        <p>Birthdate: <input type="date"></p>
+
+        <label for="country">Country:</label>
+            <select name="country">
+                <option value="">Select</option>
+                <option value="saab">India</option>
+                <option value="USA">USA</option>
+                <option value="Other">Other</option>
+            </select>
+          <br><br>  
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
